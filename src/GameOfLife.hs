@@ -5,11 +5,8 @@ import Data.Matrix
 import Data.Maybe
 import Data.List
 
-
 getCell :: Grid -> Location -> Maybe Cell
 getCell grid (row, column) = safeGet row column grid
-
--- getNeighbours
 
 topLeft :: Location -> Location
 topLeft (i, j) = (i - 1, j - 1)

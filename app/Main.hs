@@ -6,4 +6,4 @@ import Display
 import Types
 
 main :: IO ()
-main = print "Hello World!"
+main = playGame gliderGrid
