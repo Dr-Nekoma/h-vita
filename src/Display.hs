@@ -8,12 +8,12 @@ import Games
 import Types
 
 render :: DisplayCellSize -> Grid -> Picture
-render (width, height) grid = Pictures $ toList $ mapPos f grid
+render (width, height) grid = Pictures $ toList $ mapPos cellToRect grid
     where 
         xAxis column width = (fromIntegral column) * width + borderSize * (fromIntegral column)
         yAxis row height = (* (-1)) $ (fromIntegral row) * height + borderSize * (fromIntegral row)
         borderSize = 2
-        f (row, column) cell
+        cellToRect (row, column) cell
             | cell == dead = Blank
             | otherwise    = Translate (xAxis column width) (yAxis row height)
                              $ rectangleSolid width height 
