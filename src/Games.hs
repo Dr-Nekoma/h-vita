@@ -3,11 +3,6 @@ module Games where
 import Types
 import Data.Matrix
 
-testGrid :: Grid
-testGrid = fromLists [ [alive, dead, dead]
-                      ,[dead, alive, dead]
-                      ,[dead, dead, alive]]
-
 beaconOscillatorGrid :: Grid
 beaconOscillatorGrid = fromLists [ [dead, dead, dead, dead, dead, dead]
                                   ,[dead, alive, alive, dead, dead, dead]
