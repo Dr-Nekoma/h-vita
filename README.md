@@ -7,7 +7,7 @@ This is the [game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 - [Data.Matrix](https://hackage.haskell.org/package/matrix-0.3.6.1/docs/Data-Matrix.html)
 - [Graphics.Gloss](https://hackage.haskell.org/package/gloss)
 
-## How to use run the Game
+## How to run the Game
 
 To execute the game you do:
 
