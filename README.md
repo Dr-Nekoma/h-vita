@@ -24,4 +24,4 @@ If you want to see a different game (not the glider one), open the REPL and use:
 
 ## Dr.Nekoma
 
-Builded live on [twitch](https://www.twitch.tv/drnekoma) and archived on [youtube](https://www.youtube.com/channel/UCMyzdYsPiBU3xoqaOeahr6Q)
+Built live on [twitch](https://www.twitch.tv/drnekoma) and archived on [youtube](https://www.youtube.com/channel/UCMyzdYsPiBU3xoqaOeahr6Q)
