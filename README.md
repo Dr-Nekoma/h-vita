@@ -11,11 +11,9 @@ This is the [game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 To execute the game you do:
 
-`stack run`
+`stack run -- -f <life file> -r <number of rows> -c <number of columns>`
 
-If you want to see a different game (not the glider one), open the REPL and use:
-
-`playGame OTHER_GAME`
+It will load a `.life` file in a matrix of the specified size. You can read about the `Life` format [here](https://conwaylife.com/wiki/Life_1.06).
 
 ## Developers
 

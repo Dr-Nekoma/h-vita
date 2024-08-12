@@ -4,8 +4,21 @@ import Data.Matrix
 import Graphics.Gloss
 import Graphics.Gloss.Interface.Pure.Simulate
 import GameOfLife
-import Games
 import Types
+
+createGrid :: Int -> Int -> [Location] -> Matrix Cell
+createGrid rows cols positions = matrix rows cols getCellState
+    where
+        centerRow = (rows + 1) `div` 2
+        centerCol = (cols + 1) `div` 2
+
+        index :: Int -> Int -> Location
+        index x y = (centerRow - x, y - centerCol)
+
+        getCellState :: Location -> Cell
+        getCellState (x, y)
+            | index x y `elem` positions = alive
+            | otherwise = dead
 
 render :: DisplayCellSize -> Grid -> Picture
 render (width, height) grid = Pictures $ toList $ mapPos cellToRect grid

@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.4.
+-- This file has been generated from package.yaml by hpack version 0.36.0.
 --
 -- see: https://github.com/sol/hpack
 
@@ -27,7 +27,8 @@ library
   exposed-modules:
       Display
       GameOfLife
-      Games
+      Options
+      Parser
       Types
   other-modules:
       Paths_h_vita
@@ -37,6 +38,9 @@ library
       base >=4.7 && <5
     , gloss
     , matrix
+    , megaparsec
+    , optparse-applicative
+    , text
   default-language: Haskell2010
 
 executable h-vita-exe
@@ -51,6 +55,9 @@ executable h-vita-exe
     , gloss
     , h-vita
     , matrix
+    , megaparsec
+    , optparse-applicative
+    , text
   default-language: Haskell2010
 
 test-suite h-vita-test
@@ -66,4 +73,7 @@ test-suite h-vita-test
     , gloss
     , h-vita
     , matrix
+    , megaparsec
+    , optparse-applicative
+    , text
   default-language: Haskell2010
